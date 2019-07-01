@@ -1,9 +1,10 @@
 package edu.br.whatsapp.modelo;
 
+import java.io.File;
 import java.time.Instant;
 
 public class Mensagem {
-
+	private File anexo;
 	private String texto;
 	private Usuario remetente;
 	private Usuario destinatario;
@@ -18,6 +19,16 @@ public class Mensagem {
 	}
 	
 	
+	public File getAnexo() {
+		return anexo;
+	}
+
+
+	public void setAnexo(File anexo) {
+		this.anexo = anexo;
+	}
+
+
 	public String getTexto() {
 		return texto;
 	}
